@@ -1,5 +1,6 @@
 package com.techneis.config;
 
+import jakarta.transaction.Transaction;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,4 +16,5 @@ public class KafkaConfiguration {
         return TopicBuilder.name("techneis-str-topic")
                 .build();
     }
+
 }

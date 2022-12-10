@@ -18,8 +18,6 @@ public class ProducerController {
     public static final Logger LOGGER = LoggerFactory.getLogger(ProducerController.class);
 
     private ProducerService service;
-    @Autowired
-    KafkaConfiguration configuration;
 
     public ProducerController(ProducerService service) {
         this.service = service;
